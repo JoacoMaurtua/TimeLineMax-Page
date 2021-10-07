@@ -42,3 +42,14 @@ document.getElementById('cta').addEventListener('click', function(){
     }
 })
 
+
+document.getElementById('pause').addEventListener('click', function(){
+    
+  if(t1.paused()){
+    t1.reverse();
+  }  
+  else{
+    t1.pause();
+    t1.paused(true);
+  }
+})
